@@ -1,0 +1,149 @@
+# ============================================
+# PYTHON
+# ============================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Distribución
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Cobertura
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# ============================================
+# AIRFLOW
+# ============================================
+
+# Base de datos local de Airflow
+airflow.db
+
+# Logs de Airflow
+logs/
+
+# Configuración local
+airflow.cfg
+
+# PID files
+airflow-webserver.pid
+airflow-scheduler.pid
+
+# Archivos temporales
+*.pid
+
+# ============================================
+# SNOWFLAKE
+# ============================================
+
+# Credenciales locales
+connections.toml
+config.toml
+
+# Variables de entorno
+.env
+.env.*
+
+# Claves privadas para autenticación
+*.pem
+*.p8
+*.key
+
+# SnowSQL
+snowsql.cnf
+
+# ============================================
+# DBT (si lo usas con Snowflake)
+# ============================================
+
+target/
+dbt_packages/
+logs/
+
+# Perfil local DBT
+profiles.yml
+
+# ============================================
+# TERRAFORM (si despliegas infraestructura)
+# ============================================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# ============================================
+# ARCHIVOS TEMPORALES
+# ============================================
+
+tmp/
+temp/
+*.tmp
+
+# ============================================
+# DATOS LOCALES
+# ============================================
+
+data/raw/
+data/staging/
+data/tmp/
+
+# Mantener estructura de carpetas
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+!data/tmp/.gitkeep
+
+# ============================================
+# SECRETS
+# ============================================
+
+secrets/
+credentials/
+*.secret
+
+# Azure
+.azure/
+
+# AWS
+.aws/
+
+# GCP
+.gcp/
+
+# ============================================
+# TESTS
+# ============================================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
