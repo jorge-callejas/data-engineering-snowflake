@@ -1,0 +1,28 @@
+USE DATABASE MEETUP_DB;
+USE SCHEMA INTEGRATION;
+
+-- File Format CSV
+
+CREATE OR REPLACE FILE FORMAT CSV_FORMAT
+TYPE = CSV
+SKIP_HEADER = 1
+FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+NULL_IF = (
+    '',
+    'NULL',
+    'null',
+    'not_found'
+);
+
+-- Stage para datos de entrada
+
+CREATE OR REPLACE STAGE RAW_MEETUP_STAGE
+URL = 's3://{bucket_name}/raw/'
+STORAGE_INTEGRATION = MEETUP_S3_INT
+FILE_FORMAT = (FORMAT_NAME = CSV_FORMAT);
+
+-- Stage para datos de salida
+
+CREATE OR REPLACE STAGE EXPORT_MEETUP_STAGE
+URL = 's3://{bucket_name}/exports/'
+STORAGE_INTEGRATION = MEETUP_S3_INT;
