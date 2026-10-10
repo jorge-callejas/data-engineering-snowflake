@@ -1,0 +1,26 @@
+# Extracción y datos sintéticos
+kaggle>=1.6.0
+faker>=20.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# AWS SDK
+boto3>=1.28.0
+
+# Snowflake Connector
+snowflake-connector-python[pandas]>=3.0.0
+snowflake-sqlalchemy>=1.5.0
+
+# Utilidades de entorno
+python-dotenv>=1.0.0
+
+# Pruebas y calidad de código
+pytest>=7.4.0
+
+boto3
+pandas
+snowflake-connector-python
+snowflake-sqlalchemy
+python-dotenv
+kaggle
+slack_sdk

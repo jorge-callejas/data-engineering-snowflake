@@ -13,9 +13,11 @@ SETUP_FILES = [
     "sql/01_setup/01_databases_schemas.sql",
     "sql/01_setup/02_storage_integration.sql",
     "sql/01_setup/03_stages_file_formats.sql",
+    "sql/01_setup/05_control_tables.sql",
     "sql/02_bronze/create_bronze_tables.sql",
     "sql/03_silver/create_silver_tables.sql",
     "sql/03_silver/create_quarentine_tables.sql",
+    "sql/04_gold/create_gold_tables.sql"
 ]
 
 
