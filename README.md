@@ -453,8 +453,6 @@ La solución desarrollada permite:
 
 La plataforma implementa un flujo completo de Ingeniería de Datos moderno, automatizado y escalable, cubriendo todos los requerimientos planteados en la prueba técnica.
 
-Puedes explicarlo así en el README:
-
 15. Cómo usar
 
 Crear las cuentas necesarias
